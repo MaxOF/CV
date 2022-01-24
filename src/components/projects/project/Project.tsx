@@ -9,10 +9,10 @@ type PropsType = {
 const Project = (props: PropsType) => {
     return (
         <div className={s.project}>
-            <div className={s.icon}>
-                <button className={s.button}>See</button>
+            <div className={s.imgContainer}>
+                <a className={s.refToProject} href="">See</a>
             </div>
-            <h3 className={s.title}>{props.title}</h3>
+            <span className={s.title}>{props.title}</span>
             <span className={s.description}>{props.description}</span>
         </div>
     );

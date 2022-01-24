@@ -16,8 +16,8 @@
 }
 .formBlock {
     display: flex;
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 60%;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -25,9 +25,10 @@
     background-color: antiquewhite;
     width: 96.5%;
     height: 10%;
+    margin-bottom: 5px;
 }
 .textarea{
     height: 61%;
     background-color: antiquewhite;
-    width: 96.5%
+    width: 96.5%;
 }
