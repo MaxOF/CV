@@ -3,7 +3,7 @@
 
 .title {
     margin: 0 0 30px;
-    text($TitleFontFamily, 36px, 1.2, 300);
+    @include text($titleFontFamily, 36px, 1.2, 300);
     text-transform: capitalize;
     letter-spacing: 5px;
     position: relative;

@@ -6,10 +6,10 @@
 .contactsBlock {
     padding: 100px 0;
     .container {
-        container();
-        flex(column, flex-start, center, nowrap);
+        @include container();
+        @include flex(column, flex-start, center, nowrap);
         .form {
-            flex(column, flex-start, stretch, nowrap);
+            @include flex(column, flex-start, stretch, nowrap);
             width: 540px;
             margin-top: 60px;
             @media screen and (max-width: 630px) {
@@ -20,7 +20,7 @@
                 background: $bgSecondColor;
                 border: 1px solid #4a4a4a;
                 box-sizing: border-box;
-                text(inherit, 12px, 1.5, 400);
+                @include text(inherit, 12px, 1.5, 400);
                 outline: none;
                 color: #495057;
                 margin-bottom: 1.2rem;

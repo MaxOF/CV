@@ -3,8 +3,8 @@
 
 .btn {
   border: none;
-  flex(row, center, center, nowrap);
-  text($TextFontFamily, 14px, 1.2, 400);
+  @include flex(row, center, center, nowrap);
+  @include text($textFontFamily, 14px, 1.2, 400);
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 8px 20px;

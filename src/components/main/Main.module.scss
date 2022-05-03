@@ -3,27 +3,27 @@
 
 .mainBlock {
   min-height: 100vh;
-flex(row, center, center, nowrap);
+  @include flex(row, center, center, nowrap);
   padding: 100px 0;
   background-color: indianred;
 
   .container {
-  container();
-  flex(row, space-round, center, wrap);
+    @include container();
+    @include flex(row, space-round, center, wrap);
 
     .greeting {
-    flex(column, flex-start, flex-start, nowrap);
+    @include flex(column, flex-start, flex-start, nowrap);
 
       span {
         font-size: 16px;
 
         &:nth-child(2) {
-        text($TitleFontFamily, 50 px, 1.2, 700);
+          @include text($titleFontFamily, 50 px, 1.2, 700);
           letter-spacing: 5px;
           margin: 10px 0;
 
           span {
-          text($TitleFontFamily, 50 px, 1.2, 700);
+            @include text($titleFontFamily, 50 px, 1.2, 700);
             letter-spacing: 5px;
             position: relative;
             z-index: 0;
@@ -42,7 +42,7 @@ flex(row, center, center, nowrap);
         }
       }
       h1 {
-        text($TextFontFamily, 20px, 1.8, 400);
+        @include text($titleFontFamily, 20px, 1.8, 400);
         margin: 0;
       }
       @media screen and (max-width: 1143px) {
@@ -58,7 +58,7 @@ flex(row, center, center, nowrap);
       .image {
         height: 400px;
         width: 300px;
-        bgSettings();
+        @include bgSettings();
         background-image: url('src/assets/image/photo.jpg');
         background-position: 80% 0;
         @media screen and (max-width: 600px){

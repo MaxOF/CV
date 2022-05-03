@@ -5,14 +5,16 @@ import styleContainer from '../common/styles/Container.module.css'
 const Main = () => {
     return (
         <div className={s.mainBlock}>
-            <div className={`${styleContainer.container} ${s.mainContainer}`}>
-                <div className={s.text}>
+            <div className={`${styleContainer.container} ${s.container}`}>
+                <div className={s.greeting}>
                     <span>Hi There</span>
-                    <h1>Max Filippov</h1>
-                    <p>Front-end Developer</p>
+                    <span>I am Max <span>Filippov</span></span>
+                    <h1>Front-end Developer</h1>
                 </div>
                 <div className={s.photo}>
+                    <div className={s.image}>
 
+                    </div>
                 </div>
             </div>
         </div>
