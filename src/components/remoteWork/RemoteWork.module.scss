@@ -1,9 +1,20 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+@import 'src/components/common/components/button/Buton.module';
+
 .remoteBlock {
-    height: 33vh;
-    background-color: navajowhite;
+  padding: 100px 0;
+  .container {
+    @include container();
+    @include flex(column, flex-start, stretch, nowrap);
+
+
+    button {
+      @extend .btn;
+      align-self: center;
+      background-color: transparent;
+      margin-top: 30px;
+    }
+  }
 }
-.remoteContainer {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
+

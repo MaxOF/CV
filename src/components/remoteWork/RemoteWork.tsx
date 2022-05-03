@@ -1,15 +1,18 @@
 import React from 'react';
-import s from './RemoteWork.module.css'
-
+import s from './RemoteWork.module.scss'
+import Title from "../common/components/title/Title";
+import {Fade} from "react-awesome-reveal";
 
 
 const RemoteWork = () => {
     return (
         <div className={s.remoteBlock}>
-            <div className={s.container}>
-                <h2>Remote work</h2>
-                <button>Hire me</button>
-            </div>
+            <Fade>
+                <div className={s.container}>
+                    <Title text={'Remote work'}/>
+                    <button>Hire me</button>
+                </div>
+            </Fade>
         </div>
     );
 };
