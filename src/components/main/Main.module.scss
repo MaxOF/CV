@@ -1,0 +1,82 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.mainBlock {
+  min-height: 100vh;
+flex(row, center, center, nowrap);
+  padding: 100px 0;
+  background-color: indianred;
+
+  .container {
+  container();
+  flex(row, space-round, center, wrap);
+
+    .greeting {
+    flex(column, flex-start, flex-start, nowrap);
+
+      span {
+        font-size: 16px;
+
+        &:nth-child(2) {
+        text($TitleFontFamily, 50 px, 1.2, 700);
+          letter-spacing: 5px;
+          margin: 10px 0;
+
+          span {
+          text($TitleFontFamily, 50 px, 1.2, 700);
+            letter-spacing: 5px;
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 20px;
+              background-color: $primaryColor;
+              bottom: 0;
+              z-index: -1;
+            }
+          }
+        }
+      }
+      h1 {
+        text($TextFontFamily, 20px, 1.8, 400);
+        margin: 0;
+      }
+      @media screen and (max-width: 1143px) {
+        align-items: center;
+      }
+    }
+    .photo {
+      position: relative;
+      z-index: 1;
+      @media screen and (max-width: 1143px) {
+        margin-top: 50px;
+    }
+      .image {
+        height: 400px;
+        width: 300px;
+        bgSettings();
+        background-image: url('src/assets/image/photo.jpg');
+        background-position: 80% 0;
+        @media screen and (max-width: 600px){
+          height: 360px;
+          width: 260px;
+          transition: .5s;
+        }
+        &:before{
+          content: "";
+          position: absolute;
+          height: 110%;
+          width: 105%;
+          border: 5px solid $primaryColor;
+          left: 15px;
+          top: -15px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
