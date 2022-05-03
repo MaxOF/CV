@@ -4,7 +4,7 @@ import {Fade} from 'react-awesome-reveal';
 
 const Main = () => {
     return (
-        <div className={s.mainBlock}>
+        <div id='main' className={s.mainBlock}>
             <Fade>
             <div className={s.container}>
                 <div className={s.greeting}>

@@ -8,6 +8,9 @@
   background-color: $bgSecondColor;
   transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
   border-radius: 30px;
+  @media screen and (max-width: 1127px) {
+    margin: 70px auto;
+  }
 
   &:hover {
     box-shadow: 0px 20px 35px burlywood;
@@ -50,15 +53,18 @@
   .projectInfo {
     padding: 25px 20px;
 
+
     .title {
       @include text ($titleFontFamily, 16px, 1.2, 400);
       letter-spacing: 1px;
       margin: 0 0 5px;
+      color: $primaryColor;
     }
 
     .description {
       @include text($textFontFamily, 12px, 1.8, 400);
       font-weight: 400;
+      color: $textColor;
     }
   }
 }

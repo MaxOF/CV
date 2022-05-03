@@ -4,17 +4,20 @@ import s from './Skill.module.scss'
 
 type PropsType = {
     title: string
-    description: string
+    style: {
+        backgroundImage: string
+    }
 }
 
 const Skill = (props: PropsType) => {
     return (
         <div className={s.skill}>
-            <div className={s.icon}>
-                <img src={''} alt='logo'/>
+            <div className={s.icon} style={props.style}>
+
             </div>
-            <h3>{props.title}</h3>
-            <span className={s.description}>{props.description}</span>
+            <div className={s.titleWrap}>
+                <h3 className={s.title}>{props.title}</h3>
+            </div>
         </div>
     );
 };

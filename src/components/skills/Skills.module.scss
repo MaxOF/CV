@@ -1,16 +1,17 @@
-.skillsBlock{
-    min-height: 100vh;
-    background-color: rosybrown;
-}
-.skillsContainer {
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.skills {
-    border: 1px solid;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.skillsBlock {
+  padding: 100px 50px;
+  .container {
+    @include container();
+    @include flex(column, flex-start, stretch, nowrap);
+
+    .skills {
+      @include flex(row, space-between, flex-start, wrap);
+      @media screen and (max-width: 1127px) {
+        justify-content: center;
+      }
+    }
+  }
 }
