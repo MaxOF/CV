@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.01ee07ac.css",
-    "main.js": "/CV/static/js/main.d982dea9.js",
+    "main.css": "/CV/static/css/main.e986600d.css",
+    "main.js": "/CV/static/js/main.05398c1d.js",
     "static/js/787.1ed0c42c.chunk.js": "/CV/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Redux.jpg": "/CV/static/media/Redux.1b4bb5fceb01b19da59d.jpg",
+    "static/media/React.jpg": "/CV/static/media/React.8a6fc0a24a800d1e0f4a.jpg",
+    "static/media/todolist.jpg": "/CV/static/media/todolist.602018d07bb68d24b7ae.jpg",
+    "static/media/social-network.jpg": "/CV/static/media/social-network.18ff4ab8d8a4ea725047.jpg",
+    "static/media/photo.jpg": "/CV/static/media/photo.3a72417d5afe5b46c521.jpg",
+    "static/media/Typescript.jpg": "/CV/static/media/Typescript.1a203e65baa39b0b972d.jpg",
+    "static/media/telegram.png": "/CV/static/media/telegram.e9722f26cc228e817986.png",
+    "static/media/flashcards.jpg": "/CV/static/media/flashcards.fd72dc347beceab8d1d6.jpg",
+    "static/media/linkedin.png": "/CV/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "static/media/codewars-blue.png": "/CV/static/media/codewars-blue.9bb15b70d9ce90ff2360.png",
     "index.html": "/CV/index.html",
-    "main.01ee07ac.css.map": "/CV/static/css/main.01ee07ac.css.map",
-    "main.d982dea9.js.map": "/CV/static/js/main.d982dea9.js.map",
+    "main.e986600d.css.map": "/CV/static/css/main.e986600d.css.map",
+    "main.05398c1d.js.map": "/CV/static/js/main.05398c1d.js.map",
     "787.1ed0c42c.chunk.js.map": "/CV/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01ee07ac.css",
-    "static/js/main.d982dea9.js"
+    "static/css/main.e986600d.css",
+    "static/js/main.05398c1d.js"
   ]
 }
