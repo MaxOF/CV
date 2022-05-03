@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Footer.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
 import Title from "../common/components/title/Title";
 import telegramIcon from '../../assets/image/footer/telegram.png'
 import gitHubIcon from '../../assets/image/footer/githun.png'
@@ -10,7 +9,7 @@ import codewarsIcon from '../../assets/image/footer/codewars-blue.png'
 const Footer = () => {
     return (
         <div className={s.footer}>
-            <div className={`${styleContainer.container} ${s.container}`}>
+            <div className={s.container}>
                 <Title text={'Max Filippov'} />
                 <div className={s.socialIcons}>
                     <div className={s.socialIcon}>

@@ -1,13 +1,14 @@
 import React from 'react';
 import s from "./Contacts.module.scss"
-import style from "../common/styles/Container.module.css";
 import Title from "../common/components/title/Title";
+import {Fade} from "react-awesome-reveal";
 
 const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
-            <div className={`${s.contactsContainer} ${style.container}`}>
+            <div className={s.container}>
                 <Title text={"Contacts"}/>
+                <Fade triggerOnce>
                 <form className={s.form}>
                     <input type='text' className={s.formArea} placeholder='Name'/>
                     <input type='text' className={s.formArea} placeholder='E-mail'/>
@@ -17,6 +18,7 @@ const Contacts = () => {
                     />
                     <button type="submit">Send message</button>
                 </form>
+                </Fade>
             </div>
         </div>
     );

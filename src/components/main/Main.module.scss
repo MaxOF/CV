@@ -5,7 +5,14 @@
   min-height: 100vh;
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
-  background-color: indianred;
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+  }
 
   .container {
     @include container();
@@ -18,12 +25,12 @@
         font-size: 16px;
 
         &:nth-child(2) {
-          @include text($titleFontFamily, 50 px, 1.2, 700);
+          @include text($titleFontFamily, 50px, 1.2, 700);
           letter-spacing: 5px;
           margin: 10px 0;
 
           span {
-            @include text($titleFontFamily, 50 px, 1.2, 700);
+            @include text($titleFontFamily, 50px, 1.2, 700);
             letter-spacing: 5px;
             position: relative;
             z-index: 0;
@@ -59,7 +66,7 @@
         height: 400px;
         width: 300px;
         @include bgSettings();
-        background-image: url('src/assets/image/photo.jpg');
+        background-image: url('./../../assets/image/photo.jpg');
         background-position: 80% 0;
         @media screen and (max-width: 600px){
           height: 360px;

@@ -1,3 +1,15 @@
+@import './components/common/styles/sass/variables';
+
 * {
     box-sizing: border-box;
+}
+.App {
+    > div {
+        &:nth-child(n) {
+            background-color: $bgSecondColor;
+        }
+        &:nth-child(2n) {
+            background-color: $primaryColor;
+        }
+    }
 }
