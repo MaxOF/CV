@@ -30,9 +30,9 @@ const Projects = () => {
             <div className={s.container} >
                 <Title text={'My Projects'}/>
                 <div className={s.projects}>
-                    <Project style={social} title={'Social Network'} description={socialDescription} />
-                    <Project style={todo} title={'To do list'} description={todoDescription} />
-                    <Project style={flashcards} title={'Flashcards'} description={cardsDescription} />
+                    <Project style={social} title={'Social Network'} description={socialDescription} refer={'https://maxof.github.io/socialNetwork/'} />
+                    <Project style={todo} title={'To do list'} description={todoDescription} refer={'https://maxof.github.io/todoLists/'} />
+                    <Project style={flashcards} title={'Flashcards'} description={cardsDescription} refer={'https://roman160784.github.io/cards/#/login'} />
                 </div>
             </div>
             </Fade>
